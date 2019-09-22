@@ -1,14 +1,20 @@
+<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>吴棋棋的简单网页应用</title>
-    <script>
-        var str;
-        console.log(str);
+    <head>
+        <meta charset="UTF-8">
+        <title>吴棋棋的简单网页应用</title>
+    </head>    
+    <script   type="text/javascript">   
+        function test(args){
+            var who = args
+            var str = prompt()
+            console.log(who+str) 
+    }
     </script>
-</head>
-
-<body>
-    <input type="button" value="小明说" onclick="var str = prompt('')">
-    <input type="button" value="小美说" onclick="var str = prompt('')">
+    <body>
+    <input type="button" value="小明说" onclick="test('小明说:')">
+    <input type="button" value="小美说" onclick="test('小美说:')">
 </body>
+
+</html>
