@@ -11,4 +11,5 @@ function sort(method){
     logValues = logs.values()
     console.log(logValues.next())
     setTimeout("showLog(logValues,showDiv)", 50)
+    showDiv.innerHTML = logs
 }
